@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/* Global Setting*/
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #000;
+  --grey-border-color: #454545;
+  --grey-footer-color: #999;
+  --font-color: #333;
+  --background-color: #f7f7f7;
+
+  /* font size */
+  --font-large: 40px;
+  --font-medium: 20px;
+  --font-regular: 16px;
+  --font-small: 12px;
+
+  /*margin & padding */
+  --space-basic: 30px;
+  --side-space: 40px;
+  --space-title: 46px;
+  --space-between: 14px;
+
+  /*height*/
+  --height: 120px;
+}
+/*Browser 100% */
+.html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header,
+.footer {
+  min-height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/*-------- header part -------- */
+.header {
+  background-color: var(--black-color);
+  line-height: var(--height);
+  color: var(--white-color);
+  margin: 0;
+}
+
+.header h1 {
+  width: 1000px;
+  font-size: var(--font-large);
+  font-weight: bold;
+  padding-left: var(--side-space);
+  margin: 0 auto;
+}
+
+/*-------- main part -------- */
+.main {
+  width: 1080px;
+  margin: 0 auto;
+}
+/*-------- main <menu> part -------- */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1000px;
+  column-gap: var(--space-between);
+  margin: 0 auto;
+}
+.menu h3 {
+  border: 1px solid #d1d1d1;
+  text-align: center;
+  margin-top: var(--side-space);
+  margin-bottom: var(--side-space);
+}
+.menu a {
+  font-size: var(--font-regular);
+  color: var(--black-color);
+  text-decoration: none;
+  line-height: 33px;
+  text-align: center;
+}
+
+.menu h3:hover {
+  border-color: var(--grey-border-color);
+  font-weight: bold;
+}
+
+/*-------- main <content> part -------- */
+
+.content div {
+  display: grid;
+  margin: 30px 0 0;
+  border: 1px solid #d1d1d1;
+}
+
+.content_name {
+  margin: 0;
+  margin-bottom: var(--space-basic);
+  padding-bottom: var(--space-basic);
+  border-bottom: 1px solid #454545;
+}
+
+.content h3 {
+  margin: 0;
+  padding-left: 15px;
+  border-bottom: 1px solid #d1d1d1;
+  background-color: var(--background-color);
+  line-height: 46px;
+  font-size: var(--font-regular);
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+.content p {
+  margin: 0;
+  padding: var(--space-basic);
+  font-size: var(--font-small);
+  color: var(--black-color);
+}
+
+/*-------- footer part -------- */
+.footer {
+  padding: var(--space-basic);
+  border-top: 1px solid #d1d1d1;
+  text-align: center;
+  font-size: var(--font-small);
+  color: var(--black-color);
+}
+
+#footer_adress {
+  color: var(--grey-footer-color);
+}
