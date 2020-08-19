@@ -109,7 +109,7 @@ body {
   padding-left: 15px;
   border-bottom: 1px solid #d1d1d1;
   background-color: var(--background-color);
-  line-height: 46px;
+  line-height: var(--space-title);
   font-size: var(--font-regular);
   color: var(--font-color);
   font-weight: bold;
